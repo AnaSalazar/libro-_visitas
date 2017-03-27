@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Lista de Visitantes</title>
+    <script src="assets/js/lista.js">
+    </script>
+  </head>
+  <body BGCOLOR="#ECCEF5">
+    <div>
+      <h1>Artículos</h1>
+      <p><FONT SIZE=4 COLOR=purple> "El homeschool como método de cambio. ¿Qué opinas de esto?"</FONT></p>
+      <hr>
+      <div id="espacioComentarios">
+
+      </div>
+      <h2>Crear artículo</h2>
+      <tr>
+        <td><button type="text" onclick="textoGrande();">Texto Grande</button></td>
+        <td><button type="text" onclick="textoMediano();">Texto Mediano</button></td>
+        <td><button type="text" onclick="textoChico();">Texto Chico</button></td>
+        <td><button type="text" onclick="colorTexto();">Color de Texto</button></td>
+        <td><button type="text" onclick="colorFondo();">Color de Fondo</button></td>
+        <td><button type="text" onclick="izquierdaTexto();">Alinear Izquierda</button></td>
+        <td><button type="text" onclick="centrarTexto();">Centrar</button></td>
+        <td><button type="text"onclick="derechaTexto();">Alinear Derecha</button></td>
+      </tr>
+      <textarea id="contenido" rows="10" cols="80" onkeyup="mostrar();" placeholder="Aqui se va a escribir el comentario"></textarea>
+      <h3>Contenido</h3>
+      <p id="vistaPrevia">Vista Previa de tu comentario y sus modificaciones</p>
+      <button type="button" onclick="enviar();">Enviar</button>
+    </div>
+  </body>
+</html>
